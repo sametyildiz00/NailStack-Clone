@@ -10,13 +10,7 @@ public class CollectableCube : MonoBehaviour
 
     void Update()
     {
-        if(isCollected == true)
-        {
-            if (transform.parent != null)
-            {
-                transform.localPosition = new Vector3(index, 0, 0);
-            }
-        }
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -37,8 +31,7 @@ public class CollectableCube : MonoBehaviour
     {
         isCollected = true;
     }
-
-    public void setIndex (int index)
+    public void setIndex(int index)
     {
         this.index = index;
     }
